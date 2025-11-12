@@ -1,0 +1,36 @@
+Functional Model Elevator – Data Structures and Algorithms
+What?
+Designed, built, and programmed a functional model elevator that leverages data structures to efficiently manage user requests for pick-ups and drop-offs.
+How?
+Implemented two doubly linked lists to track active elevator requests and a separate node for priority users, optimizing efficiency in request handling. 
+Designed the model elevator using Onshape.
+Developed the hardware system, which includes: A 1-inch LCD display a motor driver to control elevator movement. A magnetic encoder to accurately track the elevator’s position.
+Results
+•	All implemented data structures and algorithms functioned as expected, successfully handling request operations such as Call, Delete Call, and Priority Requests.
+•	The mechanical components performed reliably, including:
+•	Functional up/down buttons on each floor.
+•	A functional priority button.
+Smooth operation of the elevator doors.
+
+Line Following Robot – Mechatronics and Robotics Design I
+What?
+Programed a MiniBot to follow a black line and pick up blocks using an IR sensor. 
+The goal was to have the MiniBot follow the line in a circle and pick up blocks three times with a minimum of 5 per time.
+How?
+•	Tested the voltage readings from the sensor when it saw v.s. when it didn’t see the line. Then coded that information into Arduino so it could adjust wheel speeds to remain on the line.
+Used an optimal set up of blocks to maximize the number of blocks per run.
+Results
+•	We became one of two groups to ever pick up all 50 blocks using the line following robot.
+
+Emergency Hyperloop Landing Wheel – Smith Engineering Hyperloop
+What?
+Led a team of 4 to design vacuum-compliant, composite emergency landing wheel for a 20-tonne MagLev vehicle at 1000 km/h, surviving 250 kN impact and delivering >20 kN braking, in a 100 Pa tube.
+How?
+Designed a two-layer wheel using Inconel 600 and Aluminum 7075-T6, performed a structural and thermal analysis in Sim Scale to determine strength and thermal capabilities. Wrote two python scripts to determine the optimal wheel diameter and mounting angle.
+Results
+Presented at Hyperloop Global 2025 and Won first place.
+
+Autonomous Delivery Robot – Mechatronics and Robotics Design II
+What? Collaborated with a team of 4 to design an autonomous food delivery robot with a 2-point hitch trailer for quarantine patients in hospitals. The system needed to navigate pre-mapped indoor paths, avoid stationary obstacles, and localize accurately despite wheel slippage.
+How? Implemented a weighted undirected graph in C++ with Dijkstra’s algorithm for shortest-path navigation, tested on a 5-node network; developed encoder-based localization; designed a caster-wheeled trailer in Onshape; prototyped wireless control via Arduino WiFiNINA with a web UI.
+Results Achieved functional navigation, localization subsystems and wireless prototype interface on Arduino.

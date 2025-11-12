@@ -3,168 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michael Cassidy</title>
+    <title>Benjamin Cox</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="page-inner">
     <header class="no-bar">
         <div class="header-content">
-            <!-- Updated headshot path -->
-            <img src="resources/headshot.jpg" alt="Michael Cassidy headshot" class="headshot">
-            <div>
-                <h1>Michael Cassidy</h1>
-                <p class="subtitle">Mechatronics Engineering Student @ Queen's University</p>
-                <nav>
-                    <a href="#about">About</a>
-                    <a href="#experience">Experience</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#reading">Books</a>
-                    <a href="#achievements">Achievements</a>
-                    <a href="#contact">Contact</a>
-                </nav>
+            <div class="site-title">
+                <h1>Benjamin Cox</h1>
+                <p class="subtitle">Mechatronics & Robotics Engineer</p>
             </div>
+            <nav class="top-nav">
+                <a href="#projects">projects</a>
+                <a href="#resume">resume</a>
+                <a href="#contact">contact</a>
+            </nav>
         </div>
+        <hr class="page-sep">
     </header>
     <main>
         <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! I'm Michael Cassidy, a Mechatronics and Robotics Engineering student at Queen's University. I am passionate about software and mechanical engineering and I spend most of my time competing on design teams at Queen's. My current role is Director of Aeromechanics for the Queen's Aerospace Design Team where I am in charge of leading a team of mechanical engineers to design and build a full carbon fibre fixed wing drone for the AIAA competition. My dream is to have a career in motorsport engineering because I will be able to push the limits of engineering in a competitive sport setting.</p>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>About me</h2>
+                    <p>For over a decade I’ve been fascinated with robotics. This led me to Mechatronics at Queen’s University, where I found lifelong friends and cultivated my skills in CAD, programming languages and embedded system development. I guide my work by one principle: volume. Do it enough times, refine it enough times, and success becomes inevitable.</p>
+
+                    <p style="margin-top:1.2rem;"><a href="#resume">My resume</a></p>
+                    <p><a href="#contact">Contact me</a></p>
+                </div>
+                <div class="about-photo">
+                    <img src="resources/Square Benjamin Cox Head Shot.jpg" alt="Benjamin Cox headshot" class="about-headshot">
+                </div>
+            </div>
         </section>
-        <section id="experience">
-            <h2>Experience</h2>
-            <ul class="exp-list">
-                <li>
-                    <strong>Director of Aeromechanics, Queen's Aerospace Design Team (2025-Present)</strong><br>
-                    <ul>
-                        <li>Lead 20-person subteam for mechanical design and construction of fixed-wing aircraft for AIAA competition.</li>
-                        <li>CAD modeling, structural analysis, manufacturing, aerodynamic modeling, and carbon fibre layups.</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>President of Technical Operations, Queen's VEXU Robotics Team (2022-2025)</strong><br>
-                    <ul>
-                        <li>Led 80+ person technical team across mechanical, electrical, and software.</li>
-                        <li>Mechanical development of four robots, won VEX AI Skills World Champion and Build Award.</li>
-                        <li>Modeled/integrated designs, applied kinematic/dynamic analysis, rapid prototyping, and mentored team members.</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Software Engineer Intern, Teranet (Summers of 2023-2025)</strong><br>
-                    <ul>
-                        <li>Led development of 12 Java REST APIs, reducing request times by over a minute for key operations.</li>
-                        <li>Developed integrated applications, cutting response times by 100ms across all requests.</li>
-                        <li>Standardized design practices, improved codebase maintainability and team collaboration.</li>
-                        <li>Recognized as a top-performing intern, highest co-op rating.</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Robotics & Programming Instructor, RoboEDU (2019-2023)</strong><br>
-                    <ul>
-                        <li>Taught robotics/programming to 300+ students, ages 4-16.</li>
-                        <li>Coached competitive robotics teams, focusing on design, programming, and teamwork.</li>
-                        <li>Developed lesson plans and projects for practical robotics engineering skills.</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Research Assistant, Queen's University (July 2021 - August 2021)</strong><br>
-                    <ul>
-                        <li>Worked with Prof. Robin Dawes to develop a system to streamline finding related study resources for students.</li>
-                        <li>Researched and developed natural language processing algorithms to compare curriculum documents and sort them by subject matter.</li>
-                        <li>Achieved a 99.6% success rate in classifying documents by course combining different data analytics techniques.</li>
-                    </ul>
-                </li>
-            </ul>
+        <!-- Experience section removed per request -->
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="project" style="margin-bottom: 48px;">
+                <h3>Emergency Hyperloop Landing Wheel – Smith Engineering Hyperloop</h3>
+                <p><strong>What?</strong> Led a team of 4 to design a vacuum-compliant, composite emergency landing wheel for a 20-tonne MagLev vehicle operating at high speed in a low-pressure tube. The design needed to survive high impact loads and provide substantial braking capability.</p>
+                <p><strong>How?</strong> Designed a two-layer wheel using Inconel 600 and Aluminum 7075-T6 and performed structural and thermal analysis in SimScale to validate strength and thermal performance. Wrote Python scripts to determine optimal wheel diameter and mounting angle.</p>
+                <p><strong>Results</strong></p>
+                <p>Presented at Hyperloop Global 2025 and won 1st place.</p>
+                    
+                
+                <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin-top:1em;">
+                    <img src="resources/HyperloopGlobalPresent.jpg" alt="Hyperloop presentation" style="width:32%; max-width:320px; border-radius:8px;">
+                    <img src="resources/HyperloopStructural.png" alt="Hyperloop structural analysis" style="width:32%; max-width:320px; border-radius:8px;">
+                    <img src="resources/HyperloopThermal.png" alt="Hyperloop thermal analysis" style="width:32%; max-width:320px; border-radius:8px;">
+                </div>
+            </div>
+
+            <div class="project" style="margin-bottom: 48px;">
+                <h3>Autonomous Delivery Robot – Mechatronics and Robotics Design II</h3>
+                <p><strong>What?</strong> Collaborated with a team of 4 to design an autonomous delivery robot with a 2‑point hitch trailer for use in hospitals. The system navigates pre‑mapped indoor paths, avoids obstacles, and maintains localization despite wheel slip.</p>
+                <p><strong>How?</strong> Implemented a weighted undirected graph in C++ with Dijkstra’s algorithm for shortest‑path navigation, prototyped encoder‑based localization, designed a caster‑wheeled trailer in Onshape, and built a wireless prototype interface using Arduino WiFiNINA and a web UI.</p>
+                <p><strong>Results</strong></p>
+                <ul>
+                    <li>Achieved functional navigation and localization subsystems and a working wireless prototype interface.</li>
+                </ul>
+                <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin-top:1em;">
+                    <img src="resources/MREN203.jpg" alt="Autonomous delivery robot" style="width:32%; max-width:320px; border-radius:8px;">
+                    <img src="resources/MREN203Trailer2.png" alt="Delivery robot trailer CAD" style="width:32%; max-width:320px; border-radius:8px;">
+                    <img src="resources/MREN203UI.png" alt="Delivery robot web UI" style="width:32%; max-width:320px; border-radius:8px;">
+                </div>
+            </div>
+
+            <div class="project" style="margin-bottom: 48px;">
+                <h3>Functional Model Elevator – Data Structures and Algorithms</h3>
+                <p><strong>What?</strong> Designed, built, and programmed a functional model elevator that leverages data structures to efficiently manage user requests for pick-ups and drop-offs.</p>
+                <p><strong>How?</strong> Implemented two doubly linked lists to track active elevator requests and a separate node for priority users, optimizing efficiency in request handling. Designed the model elevator using Onshape. Developed the hardware system including a 1-inch LCD display, a motor driver to control elevator movement, and a magnetic encoder to accurately track the elevator’s position.</p>
+                <p><strong>Results</strong></p>
+                <ul>
+                    <li>All implemented data structures and algorithms functioned as expected for Call, Delete Call, and Priority Requests.</li>
+                    <li>Mechanical components performed reliably: functional floor buttons, priority button, and smooth door operation.</li>
+                </ul>
+                <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin-top:1em;">
+                    <img src="resources/Elevator1.png" alt="Functional Model Elevator 1" style="width:48%; max-width:360px; border-radius:8px;">
+                    <img src="resources/Elevator2.png" alt="Functional Model Elevator 2" style="width:48%; max-width:360px; border-radius:8px;">
+                </div>
+            </div>
+
+            <div class="project" style="margin-bottom: 48px;">
+                <h3>Line Following Robot – Mechatronics and Robotics Design I</h3>
+                <p><strong>What?</strong> Programmed a MiniBot to follow a black line and pick up blocks using an IR sensor. The goal was to have the MiniBot follow the line in a circle and pick up blocks three times with a minimum of 5 per time.</p>
+                <p><strong>How?</strong> Calibrated sensor voltage readings for line detection and coded Arduino control to adjust wheel speeds to stay on the line. Used an optimized block layout to maximize pickups per run.</p>
+                <p><strong>Results</strong></p>
+                <p>One of two groups to pick up all 50 blocks, creating a tie for first.</p>
+                
+                <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin-top:1em;">
+                    <img src="resources/LineFollowingRobot1.jpg" alt="Line Following Robot 1" style="width:32%; max-width:240px; border-radius:8px;">
+                    <img src="resources/LineFollowingRobot2.png" alt="Line Following Robot 2" style="width:32%; max-width:240px; border-radius:8px;">
+                    <img src="resources/LineFollowingRobot3.jpg" alt="Line Following Robot 3" style="width:32%; max-width:240px; border-radius:8px;">
+                </div>
+            </div>
+
         </section>
+
         <section id="skills">
             <h2>Skills</h2>
             <ul class="skills-list">
-                <li><strong>Software:</strong> SolidWorks, OnShape, OpenVSP, FEA, Python, MATLAB, C++, Rust, Java, Excel</li>
-                <li><strong>Manufacturing:</strong> 3D Printing, Moulding, CNC Machining, Carbon Fibre Layups, Hand/Power Tools</li>
-                <li><strong>Programming:</strong> Python, C++, Java, Rust, MATLAB, Git, Docker, Linux</li>
-                <li><strong>Systems:</strong> REST APIs, Spring, Apache Camel, CI/CD (Jenkins, OpenShift), Robotics Control</li>
+                <li><strong>Tools:</strong> SOLIDWORKS CAD, OnShape, Figma, LaTeX, Microsoft Suite</li>
+                <li><strong>Programming:</strong> Python, MATLAB, C++, C, VHDL, Assembly</li>
+                <li><strong>Engineering:</strong> Sensors &amp; Actuators, Automatic Controls, Computer Architecture, Mechatronics Design</li>
             </ul>
         </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project" style="margin-bottom: 48px;">
-                <h3>Fixed-Wing Aircraft Design (In progress, photos soon)<span style="font-weight:normal; color:#666; font-size:0.9em;">(2025-2026)</span></h3>
-                    <p>Leading the mechanical design and manufacturing of a carbon fibre fixed-wing aircraft for the AIAA competition. In this year's challenge the plane will have to hold mock passengers and cargo as well as deploy and tow a banner mid flight. <a href="https://aiaa.org/dbf/" target="_blank" rel="noopener">Check out the competition specs here</a>.</p>
-            </div>
-            <div class="project" style="margin-bottom: 48px;">
-                <h3>Stringray Reconstruction Project <span style="font-weight:normal; color:#666; font-size:0.9em;">(2025)</span></h3>
-                <p>Manufactured a Stringray drone using carbon fibre layups and custom 3D-printed molds.</p>
-                <img src="resources/Stingray.png" alt="Stringray Drone" style="width:100%; max-width:600px; display:block; margin:auto; border-radius:8px;">
-            </div>
-            <div class="project" style="margin-bottom: 48px;">
-                                <h3>2025 Robot Assembly <span style="font-weight:normal; color:#666; font-size:0.9em;">(2024-2025)</span></h3>
-                                        <p>Designed and built a competitive robot for the VEXU World Championship. This robot was optimized for acceleration to grab mobile goals at the start of the match (the GIF below will provide context). To achieve this, it included several novel mechanisms including a passively unlocked potential energy accelerator which was actuated by an overcentering mechanism fired by the drive train and powered by a torsion spring. It also included a claw which passively geometrically locked and actively released to ensure other robots could not steal the goal. Finally, a power takeoff system was designed to transmit the drivetrain power to a climbing mechanism. This mechanism never made it to competition because of timeline constraints. This robot won the Build Award at the world championships with over 100 teams for the highest quality build and design. It also won the VEX AI Skills World Championship.</p>
-                                        <div style="margin: 2em 0; text-align: center;">
-                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/u0Kd9gK6MIQ" title="2025 Robot Assembly" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                        </div>
-                                <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 1em;">
-                                                        <div style="display: flex; gap: 16px; justify-content: center; align-items: center; width:100%; max-width:600px; margin:auto;">
-                                                            <img src="resources/2025Robot1.png" alt="2025 Robot 1" style="height:315px; width:auto; flex:1 1 0; object-fit:contain; border-radius:8px;">
-                                                            <img src="resources/2025Robot2.png" alt="2025 Robot 2" style="height:315px; width:auto; flex:1 1 0; object-fit:contain; border-radius:8px;">
-                                                        </div>
-                                </div>
-                                <img src="resources/GoalRush.gif" alt="Swerve Drive Animation" style="width:100%; max-width:600px; display:block; margin:auto; border-radius:8px;">
-            </div>
-            <div class="project" style="margin-bottom: 48px;">
-                                <h3>2024 VEXU Swerve Drive Robot <span style="font-weight:normal; color:#666; font-size:0.9em;">(2023-2024)</span></h3>
-                                <p>Developed and built a swerve drive robot for the 2024 VEXU season, featuring custom swerve modules and advanced motion control. It also featured a deployable and retractable net which used two low profile custom cascade lifts on a turreting platform to catch balls thrown from all directions.</p>
-                                <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 1em;">
-                                    <img src="resources/2024Robot.png" alt="2024 VEXU Swerve Drive Robot" style="width:48%; max-width:300px; height:auto; border-radius:8px;">
-                                    <img src="resources/Swerve.gif" alt="Swerve Drive Animation" style="width:48%; max-width:300px; height:auto; border-radius:8px;">
-                                </div>
-            </div>
-            <div class="project" style="margin-bottom: 48px;">
-                <h3>Odom Board PCB Design <span style="font-weight:normal; color:#666; font-size:0.9em;">(2023)</span></h3>
-                <p>Designed a custom odometry PCB for VEX Rootics, featuring high-precision sensor integration and compact layout. It was used to fuse lidar and encoder reading to develop a Kalman Filter based localization system</p>
-                <img src="resources/OdomBoard.JPG" alt="Odom Board PCB" style="width:100%; max-width:600px; display:block; margin:auto; border-radius:8px;">
-            </div>
-            <!-- Add more projects here as needed -->
-        </section>
-                        <!-- Reading Section -->
-                        <section id="reading" style="margin-top: 40px;">
-                            <h2>Relevant Books I've Read</h2>
-                            <div style="display: flex; gap: 32px; flex-wrap: wrap;">
-                                <div style="width: 200px; text-align: center;">
-                                      <img src="resources/Gillespie.png" alt="Fundamentals of Vehicle Dynamics" style="height: 260px; width: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); object-fit: contain;">
-                                    <div style="margin-top: 12px; font-weight: bold;">Fundamentals of Vehicle Dynamics</div>
-                                    <div style="font-size: 0.95em; color: #555;">Thomas D. Gillespie</div>
-                                </div>
-                                <div style="width: 200px; text-align: center;">
-                                      <img src="resources/Barnard.png" alt="Road Vehicle Aerodynamic Design" style="height: 260px; width: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); object-fit: contain;">
-                                    <div style="margin-top: 12px; font-weight: bold;">Road Vehicle Aerodynamic Design</div>
-                                    <div style="font-size: 0.95em; color: #555;">R H Barnard</div>
-                                </div>
-                            </div>
-                        </section>
+        
         <section id="achievements">
-            <h2>Achievements & Competitions</h2>
+            <h2>Achievements &amp; Awards</h2>
             <ul class="achievements-list">
-                <li><strong>Queen's University Dean's List</strong> (2022-2025) – Consistent academic achievement in engineering.</li>
-                <li><strong>VEX AI Skills World Champion</strong> (2024) – Led the team to win the world championship in AI robotics skills.<br>
-                    <img src="resources/WorldSkillsChampion.png" alt="VEX AI Skills World Champion Award" style="width:100%; max-width:300px; display:block; margin:auto; border-radius:8px; margin-top:0.5em;">
-                </li>
-                <li><strong>VEXU World Champinship Build Award</strong> (2024) – Recognized for outstanding robot design and construction.<br>
-                    <img src="resources/BuildAward.png" alt="VEXU Build Award" style="width:100%; max-width:300px; display:block; margin:auto; border-radius:8px; margin-top:0.5em;">
-                    <img src="resources/BuildAwardTeam.png" alt="VEXU Build Award" style="width:100%; max-width:300px; display:block; margin:auto; border-radius:8px; margin-top:0.5em;">
-                </li>
-                <li><strong>VEXU Canadian National Champion</strong> (2023) – Won the excellence award at Canadian Nationals, given to the best overall team at the competition.<br>
-                </li>
-                <li><strong>Schulich Leader Scholar</strong> (2022) – Awarded prestigious scholarship for STEM leadership and academic excellence. Largest STEM Scholarship in Canada. Valued at $80 000.</li>
-                <!-- Add more achievements and competitions as needed -->
+                <li><strong>Dean's Scholar Distinction</strong> – Academic recognition at Queen's University.</li>
+                <li><strong>Canada Summer Games</strong> - Qualified and competed in Sailing for Manitoba</li>
+                <li><strong>Award of Merit</strong> - Given by Sport Manitoba</li>
+                <!-- Add more achievements or competition awards here if desired -->
             </ul>
         </section>
         <section id="contact">
             <h2>Contact</h2>
-            <p>Email: <a href="mailto:michael@shoichet.com">michael@shoichet.com</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/michael-cassidy-8263a6251" target="_blank">michael-cassidy-8263a6251</a></p>
-            <p>GitHub: <a href="https://github.com/Michael-Lancebotics" target="_blank">Michael-Lancebotics</a></p>
+            <p>Email: <a href="mailto:Benjamin.Cox@queensu.ca">Benjamin.Cox@queensu.ca</a></p>
+            <p>Phone: (204) 892-2100</p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/bcox-eng" target="_blank">linkedin.com/in/bcox-eng</a></p>
         </section>
     </main>
+    </div>
 </body>
 </html>
