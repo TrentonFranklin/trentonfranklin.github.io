@@ -309,3 +309,16 @@
         .skills-list { grid-template-columns: 1fr; }
         .about-headshot { width: 260px; height: 260px; }
     }
+
+    /* Strong override for deployed environments where other CSS may interfere
+       This forces the About headshot to stay square and not exceed 360px. */
+    .about-photo .about-headshot {
+        max-width: 360px !important;
+        width: 100% !important;
+        aspect-ratio: 1 / 1 !important;
+        height: auto !important;
+        object-fit: cover !important;
+        display: block !important;
+        margin-left: auto !important; /* keep right-aligned inside .about-photo */
+        margin-right: 0 !important;
+    }
