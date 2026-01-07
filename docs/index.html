@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benjamin Cox</title>
+    <title>Trenton Franklin</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,7 +12,7 @@
     <header class="no-bar">
         <div class="header-content">
             <div class="site-title">
-                <h1>Benjamin Cox</h1>
+                <h1>Trenton Franklin</h1>
                 <p class="subtitle">Mechatronics & Robotics Engineer</p>
             </div>
             <nav class="top-nav">
@@ -28,13 +28,13 @@
             <div class="about-grid">
                 <div class="about-text">
                     <h2>About me</h2>
-                    <p>For over a decade I’ve been fascinated with robotics. This led me to Mechatronics at Queen’s University, where I found lifelong friends and cultivated my skills in CAD, programming languages and embedded system development. I guide my work by one principle: volume. Do it enough times, refine it enough times, and success becomes inevitable.</p>
+                    <p>I’m Trenton Franklin — a Mechatronics & Robotics engineer whose extracurricular leadership complements my technical work. I am currently Director of the levitation project on Queen’s Hyperloop Design Team, where I lead levitation research and development efforts to help guide a small specialized team to success at Hyperloop competitions. I’m also a member of the Research & Development team on Queen’s Aerospace Design Team, contributing to experimental designs and hybrid-electric research. These roles (leading focused research projects, coordinating with faculty and teammates, and delivering research‑grade prototypes) shape how I approach engineering: practical, iterative, and team‑oriented.</p>
 
-                    <p style="margin-top:1.2rem;"><a href="resume.html" target="_blank" rel="noopener">My resume</a></p>
-                    <p><a href="#contact">Contact me</a></p>
+                    <p style="margin-top:1.2rem;"><a href="resume.html" target="_blank" rel="noopener">View my resume</a></p>
+                    <p><a href="#contact">Contact</a></p>
                 </div>
                 <div class="about-photo">
-                    <img src="resources/Square Benjamin Cox Head Shot.jpg" alt="Benjamin Cox headshot" class="about-headshot">
+                    <img src="resources/TrentonFranklinHeadshot.jpg" alt="Trenton Franklin headshot" class="about-headshot">
                 </div>
             </div>
         </section>
@@ -42,33 +42,37 @@
         <section id="projects">
             <h2>Projects</h2>
 
-            <div class="project" style="margin-bottom: 48px;">
-                <h3>Emergency Hyperloop Landing Wheel – Smith Engineering Hyperloop</h3>
-                <p><strong>What?</strong> Led a team of 4 to design a vacuum-compliant, composite emergency landing wheel for a 20-tonne MagLev vehicle operating at high speed in a low-pressure tube. The design needed to survive high impact loads and provide substantial braking capability.</p>
-                <p><strong>How?</strong> Designed a two-layer wheel using Inconel 600 and Aluminum 7075-T6 and performed structural and thermal analysis in SimScale to validate strength and thermal performance. Wrote Python scripts to determine optimal wheel diameter and mounting angle.</p>
-                <p><strong>Results</strong></p>
-                <p>Presented at Hyperloop Global 2025 and won 1st place.</p>
-                    
-                
-                <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin-top:1em;">
-                    <img src="resources/HyperloopGlobalPresent.jpg" alt="Hyperloop presentation" style="width:32%; max-width:320px; border-radius:8px;">
-                    <img src="resources/HyperloopStructural.png" alt="Hyperloop structural analysis" style="width:32%; max-width:320px; border-radius:8px;">
-                    <img src="resources/HyperloopThermal.png" alt="Hyperloop thermal analysis" style="width:32%; max-width:320px; border-radius:8px;">
-                </div>
-            </div>
+                        <div class="project" style="margin-bottom: 48px;">
+                                <h3>Working Linear Induction Motor – Smith Engineering Hyperloop</h3>
+                                <p><strong>What?</strong> Worked with a small team of engineers to design, model, and test the first prototype linear induction motor (LIM) for the Smith Engineering Hyperloop design team.</p>
+                                <p><strong>How?</strong> Used COMSOL Multiphysics to model the moving magnetic field and electromagnetic behaviour of the LIM, and SolidWorks to develop the complete mechanical and structural design prior to fabrication. Built and tested a scaled prototype on a flywheel test rig to experimentally measure motor efficiency, then used these results to scale the design to a full pod‑sized LIM configuration.</p>
+                                <p><strong>Results</strong></p>
+                                <p>Won first place in the propulsion category at Hyperloop Global 2024.</p>
+
+                                <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin-top:1em; align-items:center;">
+                                        <img src="resources/COMSOLlim.png" alt="COMSOL LIM model" style="width:32%; max-width:320px; border-radius:8px;">
+                                        <div style="width:32%; max-width:320px; border-radius:8px; overflow:hidden; background:#000;">
+                                            <video controls playsinline style="width:100%; height:100%; display:block;" poster="resources/COMSOLlim.png">
+                                                <source src="resources/LIMonFlywheel.mp4" type="video/mp4">
+                                                Your browser does not support the video tag; <a href="resources/LIMonFlywheel.mp4">download the video</a>.
+                                            </video>
+                                        </div>
+                                        <img src="resources/LIMscaledup.jpeg" alt="Scaled up LIM" style="width:32%; max-width:320px; border-radius:8px;">
+                                </div>
+                        </div>
 
             <div class="project" style="margin-bottom: 48px;">
-                <h3>Autonomous Delivery Robot – Mechatronics and Robotics Design II</h3>
-                <p><strong>What?</strong> Collaborated with a team of 4 to design an autonomous delivery robot with a 2‑point hitch trailer for use in hospitals. The system navigates pre‑mapped indoor paths, avoids obstacles, and maintains localization despite wheel slip.</p>
-                <p><strong>How?</strong> Implemented a weighted undirected graph in C++ with Dijkstra’s algorithm for shortest‑path navigation, prototyped encoder‑based localization, designed a caster‑wheeled trailer in Onshape, and built a wireless prototype interface using Arduino WiFiNINA and a web UI.</p>
+                <h3>Autonomous Medical Delivery Robot – Mechatronics and Robotics Design II</h3>
+                <p><strong>What?</strong> Collaborated with a team of 4 to design an autonomous delivery robot intended to safely enclose and deliver biohazardous materials within a hospital or lab facility with a regulation biohazard containement box. The system needed to navigate pre-mapped indoor paths, avoid stationary obstacles, and localize accurately despite wheel slippage.</p>
+
+                <p><strong>How?</strong> Implemented a dual-controller architecture using an Arduino for low-level motor control and encoder feedback, and a Raspberry Pi for high-level navigation and sensor processing. Developed a C++ weighted graph with Dijkstra’s algorithm for shortest-path planning on a pre-mapped indoor network. Integrated encoder-based odometry and LiDAR sensing to enable accurate localization and real-time avoidance of dynamic obstacles, including pedestrians. Designed a model of air-tight biohazard containement box on Onshape.</p>
+
                 <p><strong>Results</strong></p>
-                <ul>
-                    <li>Achieved functional navigation and localization subsystems and a working wireless prototype interface.</li>
-                </ul>
+                <p>Achieved functional navigation, localization subsystems and wireless prototype interface on Arduino. (See attachments for file contents.)</p>
+
                 <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin-top:1em;">
-                    <img src="resources/MREN203.jpg" alt="Autonomous delivery robot" style="width:32%; max-width:320px; border-radius:8px;">
-                    <img src="resources/MREN203Trailer2.png" alt="Delivery robot trailer CAD" style="width:32%; max-width:320px; border-radius:8px;">
-                    <img src="resources/MREN203UI.png" alt="Delivery robot web UI" style="width:32%; max-width:320px; border-radius:8px;">
+                    <img src="resources/MREN203bot.png" alt="Autonomous delivery robot" style="width:32%; max-width:320px; border-radius:8px;">
+                    <img src="resources/BiohazardContainmentBox.png" alt="Biohazard containment box CAD" style="width:32%; max-width:320px; border-radius:8px;">
                 </div>
             </div>
 
@@ -104,30 +108,33 @@
         </section>
 
         <section id="skills">
-            <h2>Skills</h2>
+            <h2>Technical Skills</h2>
             <ul class="skills-list">
-                <li><strong>Design: </strong>SolidWorks, Onshape, SimScale, LTSpice</li>
-                <li><strong>Programming: </strong>Python, C, C++, HTML, MATLAB, Git, VHDL, Assembly</li>
                 <li><strong>Hardware: </strong>Soldering, Circuit Analysis</li>
-                <li><strong>Productivity: </strong>Word, PowerPoint, Excel, Figma, LaTeX</li>
-                <li><strong>Languages: </strong>French (Fluent), English (Fluent)</li>
+                <li><strong>Design: </strong>SolidWorks, Onshape, SimScale, LTSpice, Ansys Electronic Desktop, COMSOL Multiphysics (EM modeling)</li>
+                <li><strong>Programming: </strong>Python, Java, C, C++, HTML, MATLAB, Git, VHDL, Assembly</li>
+                <li><strong>Productivity: </strong>Word, PowerPoint, Excel, Figma</li>
+                <li><strong>Languages: </strong>French (Professional efficiency), English (Fluent)</li>
             </ul>
         </section>
         
         <section id="achievements">
             <h2>Achievements &amp; Awards</h2>
             <ul class="achievements-list">
-                <li><strong>Dean's Scholar Distinction</strong> – Academic recognition at Queen's University.</li>
-                <li><strong>Canada Summer Games</strong> - Qualified and competed in Sailing for Manitoba</li>
-                <li><strong>Award of Merit</strong> - Given by Sport Manitoba</li>
-                <!-- Add more achievements or competition awards here if desired -->
+                <li>Ontario Engineering Competition - Consulting delegate for Queen's University 2026</li>
+                <li>Dean’s Scholar Distinction: Queen’s University Faculty of Engineering and Applied Science 2025</li>
+                <li>Dean’s Scholar Distinction: Queen’s University Faculty of Engineering and Applied Science 2024</li>
+                <li>Queen’s Engineering Competition, Jr. Design: 2nd Place 2023</li>
+                <li>Level B2 DELF: Diplôme d’études en langue française — 2023</li>
+                <li>O.S.S.D. with honours in extended French: Leaside High School 2023</li>
+                <li>R.C.M. Level 5 Piano: Royal Conservatory of Music 2023</li>
             </ul>
         </section>
         <section id="contact">
             <h2>Contact</h2>
-            <p>Email: <a href="mailto:Benjamin.Cox@queensu.ca">Benjamin.Cox@queensu.ca</a></p>
-            <p>Phone: (204) 892-2100</p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/bcox-eng" target="_blank">linkedin.com/in/bcox-eng</a></p>
+            <p>Email: <a href="mailto:trenton.franklin@queensu.ca">trenton.franklin@queensu.ca</a></p>
+            <p>Phone: 647-524-7496</p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/trenton-franklin160/" target="_blank">linkedin.com/in/trenton-franklin160/</a></p>
         </section>
     </main>
     </div>

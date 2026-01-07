@@ -30,7 +30,7 @@ Designed a two-layer wheel using Inconel 600 and Aluminum 7075-T6, performed a s
 Results
 Presented at Hyperloop Global 2025 and Won first place.
 
-Autonomous Delivery Robot – Mechatronics and Robotics Design II
-What? Collaborated with a team of 4 to design an autonomous food delivery robot with a 2-point hitch trailer for quarantine patients in hospitals. The system needed to navigate pre-mapped indoor paths, avoid stationary obstacles, and localize accurately despite wheel slippage.
-How? Implemented a weighted undirected graph in C++ with Dijkstra’s algorithm for shortest-path navigation, tested on a 5-node network; developed encoder-based localization; designed a caster-wheeled trailer in Onshape; prototyped wireless control via Arduino WiFiNINA with a web UI.
+Autonomous Medical Delivery Robot – Mechatronics and Robotics Design II
+What? Collaborated with a team of 4 to design an autonomous delivery robot intended to safely enclose and deliver biohazardous materials within a hospital or lab facility with a regulation biohazard containement box. The system needed to navigate pre-mapped indoor paths, avoid stationary obstacles, and localize accurately despite wheel slippage.
+How? Implemented a dual-controller architecture using an Arduino for low-level motor control and encoder feedback, and a Raspberry Pi for high-level navigation and sensor processing. Developed a C++ weighted graph with Dijkstra’s algorithm for shortest-path planning on a pre-mapped indoor network. Integrated encoder-based odometry and LiDAR sensing to enable accurate localization and real-time avoidance of dynamic obstacles, including pedestrians. Designed a model of  air-tight biohazard containement box on Onshape.
 Results Achieved functional navigation, localization subsystems and wireless prototype interface on Arduino.
