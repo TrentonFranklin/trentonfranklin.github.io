@@ -10,6 +10,15 @@
     .resume-container { max-width: 900px; margin: 2rem auto; padding: 0 24px; }
     pre.resume-text { white-space: pre-wrap; font-family: inherit; font-size: 16px; line-height:1.6; }
   </style>
+  <script>
+    function updatePdfUrl() {
+      const timestamp = Date.now();
+      const pdfUrl = `../Trenton_Franklin_Resume.pdf?v=${timestamp}`;
+      document.getElementById('pdfFrame').src = pdfUrl;
+      document.getElementById('pdfLink').href = pdfUrl;
+    }
+    window.addEventListener('load', updatePdfUrl);
+  </script>
 </head>
 <body>
   <div class="page-inner">
@@ -31,9 +40,9 @@
       <div class="resume-container">
         <p style="margin-bottom:0.6rem;">Below is my resume — it opens inline in most browsers. Use the download link if you prefer to save a copy.</p>
         <div style="width:100%; height:800px;">
-          <embed src="../Trenton_Franklin_Resume.pdf?v=20260120" type="application/pdf" width="100%" height="100%" />
+          <iframe id="pdfFrame" type="application/pdf" width="100%" height="100%" style="border:none;"></iframe>
         </div>
-        <p style="margin-top:0.8rem;"><a href="../Trenton_Franklin_Resume.pdf?v=20260120" target="_blank" rel="noopener">Open resume in a new tab</a> · <a href="../Trenton_Franklin_Resume.pdf" download>Download resume (PDF)</a></p>
+        <p style="margin-top:0.8rem;"><a id="pdfLink" target="_blank" rel="noopener">Open resume in a new tab</a> · <a href="../Trenton_Franklin_Resume.pdf" download>Download resume (PDF)</a></p>
       </div>
     </main>
   </div>
