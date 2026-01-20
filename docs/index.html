@@ -42,10 +42,32 @@
         <section id="projects">
             <h2>Projects</h2>
 
+            <div class="project" style="margin-bottom: 48px;">
+                <h3>Hybrid Electromagnetic Suspension System</h3>
+                <ul>
+                    <li>Designing and validating a Hybrid Electromagnetic Suspension (HEMS) levitation system for a demonstration pod operating on a custom passive steel track.</li>
+                </ul>
+                <ul>
+                    <li>Utilized Ansys to simulate magnetic flux density and volume force for a hybrid permanent-magnet and electromagnet module design. Developing a closed-loop PID control system with Hall-effect sensors to regulate coil current and maintain a stable air-gap distance.</li>
+                </ul>
+                <p><strong>Results</strong></p>
+                <p>Ongoing</p>
+                
+                <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin-top:1em;">
+                    <img src="resources/HEMS geometry.png" alt="HEMS geometry" style="width:32%; max-width:320px; border-radius:8px;">
+                    <img src="resources/HEMS_FORCEDENSITYPLOT.png" alt="HEMS force density plot" style="width:32%; max-width:320px; border-radius:8px;">
+                    <img src="resources/HEMS_OUTPUTFORCEVSCURRENT.png" alt="HEMS output force vs current" style="width:32%; max-width:320px; border-radius:8px;">
+                </div>
+            </div>
+
                         <div class="project" style="margin-bottom: 48px;">
                                 <h3>Working Linear Induction Motor – Smith Engineering Hyperloop</h3>
-                                <p><strong>What?</strong> Worked with a small team of engineers to design, model, and test the first prototype linear induction motor (LIM) for the Smith Engineering Hyperloop design team.</p>
-                                <p><strong>How?</strong> Used COMSOL Multiphysics to model the moving magnetic field and electromagnetic behaviour of the LIM, and SolidWorks to develop the complete mechanical and structural design prior to fabrication. Built and tested a scaled prototype on a flywheel test rig to experimentally measure motor efficiency, then used these results to scale the design to a full pod‑sized LIM configuration.</p>
+                                <ul>
+                                    <li>Worked with a small team of engineers to design, model, and test the first prototype linear induction motor (LIM) for the Smith Engineering Hyperloop design team.</li>
+                                </ul>
+                                <ul>
+                                    <li>Used COMSOL Multiphysics to model the moving magnetic field and electromagnetic behaviour of the LIM, and SolidWorks to develop the complete mechanical and structural design prior to fabrication. Built and tested a scaled prototype on a flywheel test rig to experimentally measure motor efficiency, then used these results to scale the design to a full pod‑sized LIM configuration.</li>
+                                </ul>
                                 <p><strong>Results</strong></p>
                                 <p>Won first place in the propulsion category at Hyperloop Global 2024.</p>
 
@@ -63,9 +85,13 @@
 
             <div class="project" style="margin-bottom: 48px;">
                 <h3>Autonomous Medical Delivery Robot – Mechatronics and Robotics Design II</h3>
-                <p><strong>What?</strong> Collaborated with a team of 4 to design an autonomous delivery robot intended to safely enclose and deliver biohazardous materials within a hospital or lab facility with a regulation biohazard containement box. The system needed to navigate pre-mapped indoor paths, avoid stationary obstacles, and localize accurately despite wheel slippage.</p>
+                <ul>
+                    <li>Collaborated with a team of 4 to design an autonomous delivery robot intended to safely enclose and deliver biohazardous materials within a hospital or lab facility with a regulation biohazard containement box. The system needed to navigate pre-mapped indoor paths, avoid stationary obstacles, and localize accurately despite wheel slippage.</li>
+                </ul>
 
-                <p><strong>How?</strong> Implemented a dual-controller architecture using an Arduino for low-level motor control and encoder feedback, and a Raspberry Pi for high-level navigation and sensor processing. Developed a C++ weighted graph with Dijkstra’s algorithm for shortest-path planning on a pre-mapped indoor network. Integrated encoder-based odometry and LiDAR sensing to enable accurate localization and real-time avoidance of dynamic obstacles, including pedestrians. Designed a model of air-tight biohazard containement box on Onshape.</p>
+                <ul>
+                    <li>Implemented a dual-controller architecture using an Arduino for low-level motor control and encoder feedback, and a Raspberry Pi for high-level navigation and sensor processing. Developed a C++ weighted graph with Dijkstra’s algorithm for shortest-path planning on a pre-mapped indoor network. Integrated encoder-based odometry and LiDAR sensing to enable accurate localization and real-time avoidance of dynamic obstacles, including pedestrians. Designed a model of air-tight biohazard containement box on Onshape.</li>
+                </ul>
 
                 <p><strong>Results</strong></p>
                 <p>Achieved functional navigation, localization subsystems and wireless prototype interface on Arduino. (See attachments for file contents.)</p>
@@ -78,8 +104,12 @@
 
             <div class="project" style="margin-bottom: 48px;">
                 <h3>Functional Model Elevator – Data Structures and Algorithms</h3>
-                <p><strong>What?</strong> Designed, built, and programmed a functional model elevator that leverages data structures to efficiently manage user requests for pick-ups and drop-offs.</p>
-                <p><strong>How?</strong> Implemented two doubly linked lists to track active elevator requests and a separate node for priority users, optimizing efficiency in request handling. Designed the model elevator using Onshape. Developed the hardware system including a 1-inch LCD display, a motor driver to control elevator movement, and a magnetic encoder to accurately track the elevator’s position.</p>
+                <ul>
+                    <li>Designed, built, and programmed a functional model elevator that leverages data structures to efficiently manage user requests for pick-ups and drop-offs.</li>
+                </ul>
+                <ul>
+                    <li>Implemented two doubly linked lists to track active elevator requests and a separate node for priority users, optimizing efficiency in request handling. Designed the model elevator using Onshape. Developed the hardware system including a 1-inch LCD display, a motor driver to control elevator movement, and a magnetic encoder to accurately track the elevator’s position.</li>
+                </ul>
                 <p><strong>Results</strong></p>
                 <ul>
                     <li>All implemented data structures and algorithms functioned as expected for Call, Delete Call, and Priority Requests.</li>
@@ -93,10 +123,14 @@
 
             <div class="project" style="margin-bottom: 48px;">
                 <h3>Line Following Robot – Mechatronics and Robotics Design I</h3>
-                <p><strong>What?</strong> Programmed a MiniBot to follow a black line and pick up blocks using an IR sensor. The goal was to have the MiniBot follow the line in a circle and pick up blocks three times with a minimum of 5 per time.</p>
-                <p><strong>How?</strong> Calibrated sensor voltage readings for line detection and coded Arduino control to adjust wheel speeds to stay on the line. Used an optimized block layout to maximize pickups per run.</p>
+                <ul>
+                    <li>Programmed a MiniBot to follow a black line and pick up blocks using an IR sensor. The goal was to have the MiniBot follow the line in a circle and pick up blocks three times with a minimum of 5 per time.</li>
+                </ul>
+                <ul>
+                    <li>Calibrated sensor voltage readings for line detection and coded Arduino control to adjust wheel speeds to stay on the line. Used an optimized block layout to maximize pickups per run.</li>
+                </ul>
                 <p><strong>Results</strong></p>
-                <p>One of two groups to pick up all 50 blocks, creating a tie for first.</p>
+                <p>One of two groups to ever pick up all 50 blocks, creating a tie for first.</p>
                 
                 <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin-top:1em;">
                     <img src="resources/LineFollowingRobot1.jpg" alt="Line Following Robot 1" style="width:32%; max-width:240px; border-radius:8px;">
